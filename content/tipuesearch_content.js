@@ -1,1 +1,1 @@
-var tipuesearch = {"pages": [{'title': 'About', 'text': ': ))) \n', 'tags': '', 'url': 'About.html'}]};
+var tipuesearch = {"pages": [{'title': '首頁', 'text': '倉儲： https://github.com/40823142/cad2020 \n', 'tags': '', 'url': '首頁.html'}, {'title': 'w1', 'text': '體積對照表 (Inventor) \n \n \n 體積對照表(Soildwork) \n \n', 'tags': '', 'url': 'w1.html'}]};
