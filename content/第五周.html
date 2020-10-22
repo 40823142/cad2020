@@ -135,7 +135,40 @@ img.add_border {
         </header>
     <div id="tipue_search_content">第四周 << <a href='第四周.html'>Previous</a> <br /><h1>第五周</h1>
 <p>如何使用SSH？</p>
-<p></p><br />第四周 << <a href='第四周.html'>Previous</a> </div>
+<p>1.用編輯器進入SH</p>
+<p><img caption="false" height="526" src="./../images/D1.png" width="1000"/></p>
+<p>2.輸入 ssh-keygen -t rsa -b 4096 -C "學號"  即可取得SSH Key (*盡量不要用複製的 可能會造成錯誤)(*白色圈起來的部分是SSH Key 惠存在的路徑)</p>
+<p><img alt="" height="639" src="./../images/D2.png" width="1000"/></p>
+<p>3.找到路徑裡SSH的鑰匙</p>
+<p><img alt="" height="759" src="./../images/D3.png" width="1000"/></p>
+<p>4.用SCITE把id_rsa.pub 開啟 複製裡面所有的文字 (*在SCITE中可以按Options-&gt;Wrap 方便瀏覽)</p>
+<p><img alt="" height="634" src="./../images/D8.png" width="1000"/></p>
+<p>5.到Github--&gt;seeting--&gt;SSH and GPG keys 按下"New SSH key"</p>
+<p><img alt="" height="470" src="./../images/D9.png" width="1000"/></p>
+<p>6.Title 上寫上學號 Key 複製剛剛貼上的Key 再按下"Add SSH key"<img alt="" height="532" src="./../images/D11.png" width="1000"/></p>
+<p>7.上述完成後再找到<a href="https://www.puttygen.com/download-putty">puttygen.exe</a> <img alt="" height="698" src="./../images/D4.png" width="1000"/></p>
+<p>8.按下Load"</p>
+<p><img alt="" height="906" src="./../images/D7.png" width="1000"/></p>
+<p>9.到對應的SSH路徑選取id_rsa 選取完後再按下"save private key" 得到ppk 存到同一個路徑</p>
+<p><img alt="" height="627" src="./../images/D5.png" width="1000"/></p>
+<p>10.找到putty.exe</p>
+<p><img alt="" height="314" src="./../images/D12.png" width="1000"/></p>
+<p>11.在Saved Sessions 輸入 "github.com" 在按下 "Save"</p>
+<p><img alt="" height="852" src="./../images/D13.png" width="1000"/></p>
+<p>12.再到 "Auth" 找到"Private key file for authentication" 按下"瀏覽" <img alt="" height="899" src="./../images/D14.png" width="1000"/></p>
+<p>13.找到剛剛儲存的ppk(*如果找不到檔案記得右下角的檔案選項選擇All files)</p>
+<p><img alt="" height="622" src="./../images/D15.png" width="1000"/></p>
+<p>14.選擇後回到第11步驟的介面 按下"github.com" 再按下 "Save"</p>
+<p>15.到自己的倉儲後找到 ".git" (*如果找不到這個資料夾記得在功能區--&gt; 顯示--&gt;將"隱藏的項目"勾選)<img alt="" height="853" src="./../images/D18.png" width="1000"/></p>
+<p>16.找到config 用SCITE開啟</p>
+<p><img alt="" height="523" src="./../images/D19.png" width="1000"/></p>
+<p>17.在籃圈的格子輸入 "url = git@github.com:學號/對應的資料夾 再把綠色部分加上#號</p>
+<p><img alt="" height="1293" src="./../images/D21.png" width="1000"/></p>
+<p>18.再到start.bat裡 藍圈輸入</p>
+<pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">set GIT_HOME=%Disk%:\portablegit\bin\
+set GIT_SSH=%Disk%:\putty\plink.exe</pre>
+<p>即可完成SSH</p>
+<p><img alt="" height="1292" src="./../images/D22.png" width="1000"/></p><br />第四周 << <a href='第四周.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
