@@ -133,41 +133,12 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">第六周 << <a href='第六周.html'>Previous</a> <a href='第八周.html'>Next</a> >> 第八周<br /><h1>第七周</h1>
-<h4>利用 SciTE 編輯器類解譯 ANSI C 程式</h4>
-<p>1.下載<a href="http://download.savannah.gnu.org/releases/tinycc/tcc-0.9.27-win64-bin.zip">tcc</a>  可用來編輯ANSI Ｃ 要放在Y: 跟目錄中</p>
-<p>2.利用SciTE 編輯start.bat </p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">set path_portablegit=%Disk%:\Portablegit\bin;
-set path_julia=%Disk%:\julia-1.5.2\bin;
-set path_tcc=%Disk%:\tcc\;
- 
-path=%Disk%:;%path_python%;%path_portablegit%;%path_julia%;%path_tcc%;%path%;
-</pre>
-<p><img caption="false" height="938" src="./../images/1.png" width="1000"/></p>
-<p>3.輸入完後用stop.bat 關閉隨身系統 再重新開啟 再命令輸入 tcc 若出現以下圖片所顯示的樣子就代表路徑已在Y:裡</p>
-<p><img alt="" height="1107" src="./../images/2.png" width="1000"/></p>
-<p>4.到Options 選取"Open cpp.properties"</p>
-<p><img alt="" height="1368" src="./../images/3.png" width="1000"/></p>
-<p>5.勾選View-&gt;Line Number 找到476行 修改成即可完成</p>
-<p><img alt="" height="1296" src="./../images/4.png" width="1000"/></p>
-<pre class="brush:java;auto-links:false;toolbar:false" contenteditable="false">ccopts=-pedantic -Os
-#cc=g++ $(ccopts) -c $(FileNameExt) -o $(FileName).o
-#ccc=gcc $(ccopts) -c $(FileNameExt) -o $(FileName).o
-cc=y:/tcc/tcc.exe -run
-ccc=y:/tcc/tcc.exe -run
- 
-make.command=make
-command.compile.*.c=$(ccc) -std=c99
-command.build.*.c=$(make.command)
-command.build.*.h=$(make.command)
-command.clean.*.c=$(make.command) clean
-command.clean.*.h=$(make.command) clean
-command.go.*.c=$(cc) $(FileNameExt)
-#command.go.*.c=./$(FileName)
-# To make the Go command both compile (if needed) and execute, use this setting:
-</pre>
-<p></p>
-<br />第六周 << <a href='第六周.html'>Previous</a> <a href='第八周.html'>Next</a> >> 第八周</div>
+    <div id="tipue_search_content">第十周 << <a href='第十周.html'>Previous</a> <a href='把ipt檔轉換成stl檔.html'>Next</a> >> 把ipt檔轉換成stl檔<br /><h1>如何將檔案匯入Copplasim</h1>
+<p>1.到檔案(File)→輸入(Import)<span>→Mesh</span><img alt="" height="523" src="./../images/匯入1.png" width="600"/></p>
+<p>2.選擇要匯入的檔案     ****如果是Invetor的軟體要轉檔成stl</p>
+<p>3.設定好以後就按匯入(Import)</p>
+<p><img alt="" height="411" src="./../images/匯入3.png" width="600"/></p>
+<br />第十周 << <a href='第十周.html'>Previous</a> <a href='把ipt檔轉換成stl檔.html'>Next</a> >> 把ipt檔轉換成stl檔</div>
         
     <!-- footer -->
       <div class="container">
